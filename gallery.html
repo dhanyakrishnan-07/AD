@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Memories 📸</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+<iframe 
+  id="musicFrame"
+  width="0" 
+  height="0"
+  src="https://www.youtube.com/embed/8xg3vE8Ie_E?enablejsapi=1"
+  allow="autoplay"
+  style="display:none;">
+</iframe>
+
+<button onclick="document.getElementById('musicFrame').src += '&autoplay=1'" 
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+padding:10px 18px;
+border:none;
+border-radius:20px;
+background:linear-gradient(45deg,#ff6b81,#ff9ff3);
+color:white;
+font-weight:bold;
+cursor:pointer;
+z-index:999;
+">
+▶ Play Lover 💖
+</button>
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.55),
+      rgba(0,0,0,0.75)),
+      url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px 20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:1000px;
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(10px);
+      border-radius:30px;
+      padding:40px;
+      box-shadow:0 0 25px rgba(0,0,0,0.4);
+      color:white;
+    }
+
+    h1{
+      text-align:center;
+      font-size:3rem;
+      margin-bottom:10px;
+      color:#ffd1e6;
+    }
+
+    .subtitle{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:1.1rem;
+      opacity:0.9;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:25px;
+    }
+
+    .memory-card{
+      background:rgba(255,255,255,0.12);
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 0 15px rgba(0,0,0,0.3);
+      transition:0.3s;
+    }
+
+    .memory-card:hover{
+      transform:scale(1.03);
+    }
+
+    /* 💖 FIXED IMAGE (NO CROPPING) */
+    .memory-card img{
+      width:100%;
+      height:320px;
+      object-fit:contain;
+      background:rgba(0,0,0,0.25);
+      padding:10px;
+    }
+
+    .caption{
+      padding:18px;
+      text-align:center;
+      font-size:1rem;
+      line-height:1.6;
+      color:#ffe8f2;
+    }
+
+    .next-btn{
+      display:block;
+      width:fit-content;
+      margin:40px auto 0;
+      padding:14px 28px;
+      background:linear-gradient(45deg,#ff6b81,#ff9ff3);
+      color:white;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .next-btn:hover{
+      transform:scale(1.08);
+      box-shadow:0 0 18px rgba(255,105,180,0.6);
+    }
+
+    @media(max-width:768px){
+      .gallery{
+        grid-template-columns:1fr;
+      }
+
+      h1{
+        font-size:2.3rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Our Memories 📸💖</h1>
+
+    <p class="subtitle">
+      Little moments with you that became my favorite memories ✨
+    </p>
+
+    <div class="gallery">
+
+      <div class="memory-card">
+        <img src="img1.jpeg">
+        <div class="caption">“The way you looked at me… felt warmer than the entire world ❤️”</div>
+      </div>
+
+      <div class="memory-card">
+        <img src="img2.jpeg">
+        <div class="caption">“Your smile has a magic that makes everything beautiful 😊✨”</div>
+      </div>
+
+      <div class="memory-card">
+        <img src="img3.jpeg">
+        <div class="caption">“Being beside you feels like home 💕”</div>
+      </div>
+
+      <div class="memory-card">
+        <img src="img4.jpeg">
+        <div class="caption">“Every memory becomes special because of you 🌙❤️”</div>
+      </div>
+
+    </div>
+
+    <a href="feelings.html" class="next-btn">
+      Next ➝ What I Felt 💌
+    </a>
+
+  </div>
+
+</body>
+</html>

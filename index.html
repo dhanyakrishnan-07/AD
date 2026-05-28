@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our First Date 💕</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+<!-- 💖 MUSIC PLAYER -->
+<iframe 
+  id="musicFrame"
+  width="0"
+  height="0"
+  style="display:none;"
+  allow="autoplay"
+></iframe>
+
+<button id="musicBtn"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+padding:12px 20px;
+border:none;
+border-radius:25px;
+background:linear-gradient(45deg,#ff6b81,#ff9ff3);
+color:white;
+font-weight:bold;
+cursor:pointer;
+z-index:999;
+box-shadow:0 0 15px rgba(255,105,180,0.5);
+">
+🎶 Play Lover
+</button>
+
+<script>
+
+const btn = document.getElementById("musicBtn");
+const frame = document.getElementById("musicFrame");
+
+if(localStorage.getItem("musicPlaying") === "true"){
+    frame.src = "https://www.youtube.com/embed/8xg3vE8Ie_E?autoplay=1&loop=1&playlist=8xg3vE8Ie_E";
+    btn.innerHTML = "💖 Music Playing";
+}
+
+btn.addEventListener("click", () => {
+
+    frame.src = "https://www.youtube.com/embed/8xg3vE8Ie_E?autoplay=1&loop=1&playlist=8xg3vE8Ie_E";
+
+    localStorage.setItem("musicPlaying", "true");
+
+    btn.innerHTML = "💖 Music Playing";
+});
+
+</script>   height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop');
+      /* Kochi Marine Drive night vibe */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .card {
+      width: 85%;
+      max-width: 700px;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #ffb6c1;
+    }
+
+    .info {
+      font-size: 1.2rem;
+      line-height: 2;
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      color: #ff6b81;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #ff6b81, #ff9ff3);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255,105,180,0.6);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>Our First Date ☕💖</h1>
+
+    <div class="info">
+      📍 Place: <span class="highlight">Marine Drive, Kochi 🌊✨</span><br><br>
+      📅 Date: <span class="highlight">21.5.26</span><br><br>
+      ⏰ Time: <span class="highlight">8:15pm..When everything began</span><br><br>
+
+      💬 Memory: <br>
+      “Walking together at Marine Drive at night holding ur hands, lights shining on the water… it felt like a dream I never wanted to end 💕”
+    </div>
+
+    <a class="btn" href="moments.html">
+      Next ➝ Our Moments
+    </a>
+
+  </div>
+
+</body>
+</html>

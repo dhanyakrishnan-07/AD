@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Moment 💍</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+<iframe 
+  id="musicFrame"
+  width="0" 
+  height="0"
+  src="https://www.youtube.com/embed/8xg3vE8Ie_E?enablejsapi=1"
+  allow="autoplay"
+  style="display:none;">
+</iframe>
+
+<button onclick="document.getElementById('musicFrame').src += '&autoplay=1'" 
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+padding:10px 18px;
+border:none;
+border-radius:20px;
+background:linear-gradient(45deg,#ff6b81,#ff9ff3);
+color:white;
+font-weight:bold;
+cursor:pointer;
+z-index:999;
+">
+▶ Play Lover 💖
+</button>
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+      url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+    }
+
+    .box{
+      width:90%;
+      max-width:850px;
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(15px);
+      border-radius:25px;
+      padding:50px;
+      text-align:center;
+      color:white;
+      animation:fadeIn 1.2s ease;
+    }
+
+    h1{
+      font-size:3rem;
+      color:#ffd1e6;
+      margin-bottom:20px;
+    }
+
+    .date{
+      font-size:1.3rem;
+      margin-bottom:25px;
+      color:#ffe8f2;
+      font-weight:bold;
+      line-height:1.6;
+    }
+
+    p{
+      font-size:1.2rem;
+      line-height:1.8;
+      margin-bottom:20px;
+      color:#fce4ec;
+    }
+
+    .heart{
+      font-size:2.5rem;
+      animation:beat 1.5s infinite;
+      margin:15px 0;
+    }
+
+    .signature{
+      margin-top:25px;
+      font-size:1.1rem;
+      opacity:0.9;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:12px 28px;
+      background:linear-gradient(45deg,#ff6b81,#ff9ff3);
+      color:white;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.08);
+      box-shadow:0 0 20px rgba(255,105,180,0.6);
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0; transform:translateY(20px);}
+      to{opacity:1; transform:translateY(0);}
+    }
+
+    @keyframes beat{
+      0%,100%{transform:scale(1);}
+      50%{transform:scale(1.2);}
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <h1>💍 Our Moment</h1>
+
+    <div class="date">
+      📅 22.05.26<br>
+      ⏰ 11:28 AM<br>
+      💞 The moment everything changed forever
+    </div>
+
+    <div class="heart">❤️</div>
+
+    <p>
+      From strangers to something so special…  
+      every page of this journey led us here.
+    </p>
+
+    <p>
+      Your presence became my comfort,  
+      and your love became my home.
+    </p>
+
+    <p>
+      I don’t know what the future holds,  
+      but I know I want you in all of it.
+    </p>
+
+    <p>
+      This isn’t just a moment…  
+      it’s the beginning of forever with you 💖
+    </p>
+
+    <div class="signature">
+      — Always yours 💕
+    </div>
+
+    <!-- IMPORTANT LINK FIX -->
+    <a class="btn" href="index.html">Restart Journey 🔁</a>
+
+  </div>
+
+</body>
+</html>
